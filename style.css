@@ -1,0 +1,42 @@
+/* 研究専用・デザインに時間をかけない。スマホで押しやすいことだけ */
+:root { --ink: #222; --soft: #666; --line: #cfcac0; --bg: #f7f4ee; --card: #fff; --accent: #2f5d8a; --sel: #d9e6f3; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.7 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif; touch-action: manipulation; overscroll-behavior: contain; }
+main { max-width: 680px; margin: 0 auto; padding: 16px 16px 48px; }
+h1 { font-size: 20px; margin: 8px 0 12px; }
+h2 { font-size: 18px; margin: 20px 0 8px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+.note { color: var(--soft); font-size: 15px; }
+.warn { color: #8a3b00; font-size: 15px; }
+label { display: block; font-weight: 700; margin: 14px 0 4px; }
+input[type=text], select, textarea { width: 100%; font: inherit; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+textarea { min-height: 96px; }
+.radios label { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; margin: 6px 14px 6px 0; }
+.radios input { width: 22px; height: 22px; }
+button { font: inherit; border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); padding: 12px 16px; cursor: pointer; }
+button.primary { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 700; width: 100%; margin-top: 16px; padding: 16px; }
+button.small { padding: 8px 12px; font-size: 15px; color: var(--soft); }
+button:disabled { opacity: .45; cursor: default; }
+.bar { height: 8px; background: #e6e1d6; border-radius: 4px; overflow: hidden; margin: 6px 0 14px; }
+.bar > i { display: block; height: 100%; background: var(--accent); }
+.top { display: flex; justify-content: space-between; align-items: center; min-height: 44px; }
+.count { font-weight: 700; }
+.scene { font-size: 19px; margin: 8px 0 20px; }
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.choice { min-height: 150px; padding: 14px 10px; font-size: 18px; line-height: 1.5; text-align: center; background: #fff; border: 2px solid var(--line); border-radius: 14px; word-break: normal; overflow-wrap: anywhere; line-break: strict; }
+.choice.sel { background: var(--sel); border-color: var(--accent); }
+.up { display: block; width: 100%; margin-top: 22px; padding: 14px; color: var(--soft); border-style: dashed; }
+.up.sel { background: var(--sel); border-color: var(--accent); border-style: solid; color: var(--ink); }
+.pos { font-size: 13px; color: var(--soft); text-align: center; margin-bottom: 4px; }
+.answerbox { padding: 10px 12px; border-radius: 8px; background: #f0ece3; margin: 8px 0; font-size: 16px; }
+.opt { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; margin: 6px 0; font-size: 16px; }
+.opt.mine { background: var(--sel); border-color: var(--accent); }
+details { margin-top: 14px; }
+summary { cursor: pointer; color: var(--soft); }
+.row { display: flex; gap: 10px; }
+.row > button { flex: 1; }
+.checks label { font-weight: 400; display: flex; gap: 8px; align-items: center; margin: 4px 0; }
+.checks input { width: 22px; height: 22px; }
+.grid2 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px 8px; }
+.timer { font-size: 44px; text-align: center; margin: 12px 0; font-variant-numeric: tabular-nums; }
